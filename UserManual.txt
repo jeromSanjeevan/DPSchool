@@ -1,0 +1,3 @@
+Install Bootstrapp:
+  1.  npm install bootstrap
+  2. @import '~bootstrap/dist/css/bootstrap.min.css'; (Add the following import statement at the top of your styles.css file to import Bootstrap's CSS:)
