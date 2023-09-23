@@ -1,0 +1,21 @@
+.navbar-nav li:hover>ul.dropdown-menu{
+  display: block;
+}
+
+.dropdown-submenu{
+  position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu{
+  top:0;
+  margin-top: -5px;
+  left: 100%;
+}
+
+
+/* Example CSS for styling centered navbar links */
+.navbar-nav.justify-content-center .nav-link {
+  font-size: 18px;
+  color: #333; /* Change the color as needed */
+}
+

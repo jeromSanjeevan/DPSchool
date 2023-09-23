@@ -1,0 +1,9 @@
+#hero-slider {
+  height: 500px; /* Adjust the height as needed */
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Background color with transparency */
+  color: #fff; /* Text color */
+  padding: 20px; /* Padding for the caption */
+}
