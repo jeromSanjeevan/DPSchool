@@ -1,0 +1,29 @@
+<!-- <app-sub-menu-home></app-sub-menu-home> -->
+
+<div class="container">
+  <!-- First Column -->
+  <div class="column-20-1">
+    <!-- Content for the 20% width column -->
+    <p>20% Width Column</p>
+  </div>
+
+  <!-- Second Column -->
+  <div class="column-60">
+    <!-- Content for the 60% width column -->
+    <p>60% Width Column</p>
+  </div>
+
+  <!-- Third Column -->
+  <div class="column-20-2">
+    <div>
+<h3>Our School</h3>
+
+    </div>
+    <ul>
+      <li *ngFor="let link of ourSchoolSubMenus">
+        <a class="dropdown-item" >{{link.label}}</a>
+      </li>
+      <!-- Add more list items as needed -->
+    </ul>
+  </div>
+</div>

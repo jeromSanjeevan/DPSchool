@@ -3,5 +3,10 @@
 
 
 body {
-  padding-top: 90px; /* Adjust this value to match your navbar's height */
+  padding-top:89px; /* Adjust this value to match your navbar's height */
 }
+
+/* .horizontal-line {
+  border-top: 8px solid #f10909;
+
+} */

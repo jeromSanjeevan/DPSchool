@@ -1,0 +1,27 @@
+/* footer.component.css */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  margin: 40;
+}
+
+
+h4 {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+.school-logo {
+  max-width: 160px; /* Set the maximum width to 100px */
+  height: auto; /* Maintain the aspect ratio */
+}

@@ -1,9 +1,41 @@
-#hero-slider {
-  height: 500px; /* Adjust the height as needed */
+.c-item {
+  height: 780px;
 }
 
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.5); /* Background color with transparency */
-  color: #fff; /* Text color */
-  padding: 20px; /* Padding for the caption */
+.c-image {
+  height: 100%;
+  object-fit: cover;
+  /* filter: brightness(0.6); */
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.section-1 {
+  margin-top: 20px;
+  height: 600px;
+  background-color: aqua;
+}
+
+.section-2 {
+  margin-top: 20px;
+  height: 600px;
+  background-color: rgba(170, 196, 196, 0.678);
+}
+
+.section-3 {
+  margin-top: 20px;
+  height: 600px;
+  background-color: rgba(161, 235, 167, 0.678);
+}
+
+@media (max-width: 600px) {
+  .quick-links {
+    display: none; /* Hide the component on mobile screens */
+  }
 }

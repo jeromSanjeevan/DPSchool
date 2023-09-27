@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
+  selector: 'app-nav-bar',
+  templateUrl: './nav-bar.component.html',
+  styleUrls: ['./nav-bar.component.css'],
 })
-export class HeaderComponent implements OnInit {
+export class NavBarComponent {
   ourSchoolSubMenus = [
     { label: 'Headteachers Welcome', url: '/headTeacherWelcome' },
     { label: 'Our Vision and Values', url: '/about' },
@@ -22,25 +22,16 @@ export class HeaderComponent implements OnInit {
   ];
 
   keyInformationSubMenus = [
-    { label: 'Pupil Premium', url: '/headTeacherWelcome' },
+    { label: 'Pupil Premium', url: '' },
     { label: 'Sports Premium', url: '/about' },
     { label: 'GDPR', url: '/services' },
     { label: 'Performance Data', url: '/contact' },
     { label: 'Inspection Outcomes', url: '/contact' },
     { label: 'Financial Benchmarking', url: '/contact' },
   ];
-
   constructor() {}
 
-  ngOnInit(): void {}
 
-  // item = {
-  //   showDropdown: false,
-  // };
-
-  // toggleDropdown(item: { showDropdown: boolean }) {
-  //   item.showDropdown = !item.showDropdown;
-  // }
 
   closeMobileMenu() {
     // Close the mobile menu by toggling the collapse button if it is open
@@ -56,5 +47,24 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  scrollToTop(): void {
+    // Scroll to the top of the page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
+  // changeCSS() {
+  //   // Get the element you want to change the CSS of
+  //   const element = this.el.nativeElement.querySelector('.dropdown .dropdown-menu');
+
+  //   // Modify the CSS properties
+  //   // this.renderer.setStyle(element, 'background-color', 'blue');
+  //   this.renderer.setStyle(element, 'display', 'none');
+
+  //   setTimeout(() => {
+  //     // this.renderer.removeStyle(element, 'background-color');
+  //     // this.renderer.removeStyle(element, 'color');
+  //    this.renderer.setStyle(element, 'display', 'none');
+  //     // Add any other property removals here
+  //   }, 2000); // 2000 milliseconds or 2 seconds
+  // }
 }

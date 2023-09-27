@@ -1,0 +1,61 @@
+/* Create a container div */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 450px;
+}
+
+/* Create the first column with 20% width, blue background, and fixed height */
+.column-20-1 {
+  flex: 0 0 20%;
+  background-color: #3498db;
+  padding: 10px;
+
+}
+
+/* Create the second column with 60% width, green background, and fixed height */
+.column-60 {
+  flex: 0 0 60%;
+  background-color: #2ecc71;
+  padding: 10px;
+
+}
+
+/* Create the third column with 20% width, orange background, and fixed height */
+.column-20-2 {
+  flex: 0 0 20%;
+  background-color: #e67e22;
+  padding: 10px;
+
+}
+
+ /* Style the list in the third column */
+ .column-20-2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.column-20-2 ul li {
+  background-color: #ffcc99; /* Light Orange */
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.column-20-2 ul li:hover {
+  background-color: #ff9933; /* Darker Orange on hover */
+  color: white; /* Text color on hover */
+}
+
+  /* Media query for screens smaller than 600px (typical mobile devices) */
+  @media (max-width: 600px) {
+    .column-20-1,
+    .column-60,
+    .column-20-2 {
+        flex: 0 0 100%; /* Full width on mobile */
+    }
+}

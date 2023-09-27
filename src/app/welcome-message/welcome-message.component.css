@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Style the first row (divided into two columns) */
+.row {
+  display: flex;
+}
+
+.column-30 {
+  flex: 0 0 30%;
+  /* background-color: #e0e0e0; */
+  padding: 10px;
+}
+
+.column-70 {
+  flex: 0 0 70%;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+/* Style the second row (100% width) */
+.row-2 {
+  flex: 1; /* Takes up the remaining space */
+  /* background-color: #d0d0d0; */
+  padding: 10px;
+}
+
+.text-right{
+  text-align: righ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.welcome-container {
+  position: relative;
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0; /* Set the background color of the container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow to the container */
+}
+
+.welcome-message {
+  width: 60%; /* Adjust the width as needed */
+}
+
+.teacher-image {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.teacher-image img {
+  max-width: 100%;
+  max-height: 150px; /* Set the maximum height for the passport-sized image */
+  width: auto;
+  height: auto;
+  border-radius: 50%; /* Optional: Add a circular border to the image */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+  .welcome-container {
+    width: 100%; /* Adjust for smaller screens */
+  }
+
+  .welcome-message, .teacher-image {
+    position: static; /* Remove absolute positioning */
+    width: 100%; /* Full width for smaller screens */
+    margin-bottom: 20px; /* Add spacing between message and image */
+  }
+}
+
+

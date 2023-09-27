@@ -1,0 +1,60 @@
+.navbar {
+  box-shadow: 0 8px 6px -6px rgb(133, 127, 127);
+  background-color: #0E0B58;
+
+}
+
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+.dropend .dropdown-toggle {
+  color: salmon;
+  margin-left: 1em;
+}
+
+.dropdown-item:hover {
+  background-color: lightsalmon;
+  color: #fff;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+}
+
+.dropdown:hover>.dropdown-menu,
+.dropend:hover>.dropdown-menu {
+  display: block;
+  margin-top: .125em;
+  margin-left: .125em;
+}
+
+@media screen and (min-width:769px) {
+  .dropend:hover>.dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+
+  .dropend .dropdown-toggle {
+    margin-left: .5em;
+  }
+}
+
+
+
+.nav-item {
+  text-transform: uppercase;
+}
+
+
+.fa-solid
+{
+  color: #fff;
+}
+
+.fas
+{
+  padding-right: 5px;
+}

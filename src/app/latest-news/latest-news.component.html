@@ -1,0 +1,20 @@
+<!-- latest-news.component.html -->
+<div class="container">
+  <div class="text-center">
+    <h4>Latest News</h4>
+  </div>
+  <div>
+    <div class="row">
+      <div class="col-md-3" *ngFor="let newsItem of latestNews">
+        <div class="card">
+
+          <div class="card-body">
+            <h5 class="card-title">{{ newsItem.title }}</h5>
+            <p class="card-text">{{ newsItem.content }}</p>
+          </div>
+          <img src="{{ newsItem.imageUrl }}" alt="{{ newsItem.title }}" class="card-img-top">
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>

@@ -1,0 +1,10 @@
+/* latest-news.component.css */
+.container {
+  padding-top: 60px; /* Adjust the value as needed for the desired padding */
+  padding-bottom: 60px;
+}
+
+/* Add any other custom styles for the cards as needed */
+.card {
+  /* Your card styles here */
+}

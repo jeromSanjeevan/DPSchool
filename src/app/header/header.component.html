@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-light fixed-top " >
+<nav class="navbar navbar-expand-lg bg-light " >
   <div class="container-fluid">
     <a class="navbar-brand" href="#"></a>
     <img src="/assets/denbigh_logo/den_logo.png" alt="">
@@ -6,19 +6,21 @@
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" routerLink="home">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Our School
           </a>
 
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu custom-dropdown"  >
             <li *ngFor="let link of ourSchoolSubMenus">
-              <a class="dropdown-item" href="#">{{link.label}}</a>
+              <a class="dropdown-item"  (click)="closeMobileMenu()" routerLink={{link.url}}>{{link.label}}</a>
             </li>
             <li class="dropdown-submenu">
               <a class="dropdown-item dropdown-toggle" href="#">Admissions</a>
@@ -35,7 +37,7 @@
               <a class="dropdown-item dropdown-toggle" href="#">Key Informations</a>
               <ul class="dropdown-menu">
                 <li class="dropdown-submenu" *ngFor="let link of keyInformationSubMenus">
-                  <a class="dropdown-item" href="#">{{link.label}}</a>
+                  <a class="dropdown-item" href=""  (click)="closeMobileMenu()" routerLink={{link.url}}>{{link.label}}</a>
                 </li>
               </ul>
             </li>
@@ -45,7 +47,7 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Our Curriculum
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu slideDown">
             <li *ngFor="let link of ourSchoolSubMenus">
               <a class="dropdown-item" href="#">{{link.label}}</a>
             </li>

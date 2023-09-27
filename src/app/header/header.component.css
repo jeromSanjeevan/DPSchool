@@ -19,3 +19,24 @@
   color: #333; /* Change the color as needed */
 }
 
+.navbar-nav .nav-link {
+  margin-right:40px; /* Adjust the value as needed */
+  font-size: 1.2rem;
+}
+
+.dropdown-item
+{
+  font-size: 1.2rem;
+  margin-bottom:15px; /* Adjust the value as needed */
+}
+
+.dropdown-menu .dropdown-item {
+  border-bottom: 1px solid #ccc; /* Adjust the border color and style as needed */
+}
+
+
+/* ======================== */
+
+.nav-item{
+  text-transform: upp;
+}

@@ -1,0 +1,259 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container-fluid mx-auto">
+    <img src="/assets/denbigh_logo/den_logo.png" alt="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active" (click)="[scrollToTop(),closeMobileMenu()] " aria-current="page" routerLink="home"><span><i class="fas fa-info-circle text-white ml"></i></span>Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Our School
+          </a>
+          <ul class="dropdown-menu">
+            <li *ngFor="let link of ourSchoolSubMenus">
+              <a class="dropdown-item" (click)="[scrollToTop(),closeMobileMenu()]" >{{link.label}}</a>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Admissions
+              </a>
+              <ul class="dropdown-menu">
+                <li *ngFor="let link of admissionsSubMenus">
+                  <a class="dropdown-item">{{link.label}}</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item" (click)="closeMobileMenu()">Our Policies</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Key Informations
+              </a>
+              <ul class="dropdown-menu">
+                <li *ngFor="let link of keyInformationSubMenus">
+                  <a class="dropdown-item">{{link.label}}</a>
+                </li>
+              </ul>
+            </li>
+
+
+
+          </ul>
+        </li>
+
+        <!--  Our Curriculum Section  Here -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Our Curriculum
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" (click)="closeMobileMenu()" routerLink="headTeacherWelcome">Head Teacher
+                Welcome</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Parents Sections Starts Here -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Parents
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" (click)="closeMobileMenu()" routerLink="headTeacherWelcome">Head Teacher
+                Welcome</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Pupils Sections Starts Here -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pupils
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" (click)="closeMobileMenu()" routerLink="headTeacherWelcome">Head Teacher
+                Welcome</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+
+
+        <!-- Safeguarding Section Starts here -->
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Safeguarding
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" (click)="closeMobileMenu()" routerLink="headTeacherWelcome">Head Teacher
+                Welcome</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Send Section Starts Here -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Send
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" (click)="closeMobileMenu()" routerLink="headTeacherWelcome">Head Teacher
+                Welcome</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Our School
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" (click)="closeMobileMenu()" routerLink="headTeacherWelcome">Head Teacher Welcome</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li class="nav-item dropend">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li class="nav-item dropend">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li> -->
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
