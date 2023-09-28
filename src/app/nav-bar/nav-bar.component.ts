@@ -9,7 +9,7 @@ export class NavBarComponent {
 
   // Image URLs for Navbar
 
-  navBarLogo: string = '../../assets/denbigh_logo/den_logo.png'
+  navBarLogo: string = 'assets/denbigh_logo/den_logo.png'
 
 
   ourSchoolSubMenus = [
