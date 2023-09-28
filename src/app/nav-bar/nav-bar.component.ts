@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,12 +6,10 @@ import { Component} from '@angular/core';
   styleUrls: ['./nav-bar.component.css'],
 })
 export class NavBarComponent {
-
   // Image URLs for Navbar
+  navBarLogo: string = 'assets/denbigh_logo/den_logo.png';
 
-  navBarLogo: string = 'assets/denbigh_logo/den_logo.png'
-
-
+  
   ourSchoolSubMenus = [
     { label: 'Headteachers Welcome', url: '/headTeacherWelcome' },
     { label: 'Our Vision and Values', url: '/about' },
@@ -36,8 +34,6 @@ export class NavBarComponent {
     { label: 'Financial Benchmarking', url: '/contact' },
   ];
   constructor() {}
-
-
 
   closeMobileMenu() {
     // Close the mobile menu by toggling the collapse button if it is open

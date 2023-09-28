@@ -38,14 +38,4 @@ p {
   .quick-links {
     display: none; /* Hide the component on mobile screens */
   }
-
-  .c-item {
-    height: 380px;
-  }
-
-  .c-image {
-    height: 100%;
-    object-fit: cover;
-    /* filter: brightness(0.6); */
-  }
 }

@@ -15,6 +15,10 @@ import { LatestNewsComponent } from './latest-news/latest-news.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SubMenuHomeComponent } from './shared/sub-menu-home/sub-menu-home.component';
 
+import { HeadTeacherWelcomeComponent } from './sub-pages/head-teacher-welcome/head-teacher-welcome.component';
+
+import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,8 +33,10 @@ import { SubMenuHomeComponent } from './shared/sub-menu-home/sub-menu-home.compo
     LatestNewsComponent,
     NavBarComponent,
     SubMenuHomeComponent,
+    HeadTeacherWelcomeComponent,
+ 
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule,HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
