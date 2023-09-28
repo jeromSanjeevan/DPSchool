@@ -6,6 +6,12 @@ import { Component} from '@angular/core';
   styleUrls: ['./nav-bar.component.css'],
 })
 export class NavBarComponent {
+
+  // Image URLs for Navbar
+
+  navBarLogo: string = '../../assets/denbigh_logo/den_logo.png'
+
+
   ourSchoolSubMenus = [
     { label: 'Headteachers Welcome', url: '/headTeacherWelcome' },
     { label: 'Our Vision and Values', url: '/about' },
