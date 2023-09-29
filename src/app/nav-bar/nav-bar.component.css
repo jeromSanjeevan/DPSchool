@@ -1,14 +1,19 @@
 .navbar {
   box-shadow: 0 8px 6px -6px rgb(133, 127, 127);
-  /* background-color: #0E0B58; */
+  /* background-color: #eb0b0b; */
   background-color: hsla(225, 29%, 97%, 0.836);
 
 }
 
+.logo{
+  height: 50px;
+
+  padding-left: 40px;
+}
 
 .navbar-nav .nav-link {
   /* color: #fff; */
-  color:  #0E0B58;
+  color: #0E0B58;
 }
 
 .dropend .dropdown-toggle {
@@ -17,7 +22,7 @@
 }
 
 .navbar-toggler-icon {
-  background-image: none!important;
+  background-image: none !important;
   background-color: var(--bs-gray-800);
   height: 3px;
   width: 25px;
@@ -34,7 +39,8 @@
   content: "";
   position: relative;
   top: -7px;
-  transition: all 0.15s ease-out;/*taken down to hide quicker*/
+  transition: all 0.15s ease-out;
+  /*taken down to hide quicker*/
   transform-origin: center;
 }
 
@@ -103,12 +109,37 @@
 }
 
 
-.fa-solid
-{
-  color: #fff;
+.fa-solid {
+  color: #0d11e7;
 }
 
-.fas
-{
+.fas {
   padding-right: 5px;
+  color: #0d11e7;
+}
+
+.phone-number {
+  text-align: right; /* Right-align the phone number text */
+}
+
+
+.phone-number-container {
+  padding-right: 30px;
+  overflow: hidden; /* Hide the overflow of the phone number */
+  white-space: nowrap; /* Prevent the text from wrapping to a new line */
+}
+
+.phone-number {
+  font-size: 24px;
+  animation: runPhoneNumber 5s linear infinite;
+  /* Adjust animation duration and other properties as needed */
+}
+
+@keyframes runPhoneNumber {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
 }

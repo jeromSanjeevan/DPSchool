@@ -34,8 +34,4 @@ p {
   background-color: rgba(161, 235, 167, 0.678);
 }
 
-@media (max-width: 600px) {
-  .quick-links {
-    display: none; /* Hide the component on mobile screens */
-  }
-}
+

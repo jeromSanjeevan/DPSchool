@@ -17,7 +17,8 @@ import { SubMenuHomeComponent } from './shared/sub-menu-home/sub-menu-home.compo
 
 import { HeadTeacherWelcomeComponent } from './sub-pages/head-teacher-welcome/head-teacher-welcome.component';
 
-import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule
+import { HttpClientModule } from '@angular/common/http';
+import { SafeguardingComponent } from './main-pages/safeguarding/safeguarding.component'; // Import HttpClientModule
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http'; // Import HttpClientMod
     NavBarComponent,
     SubMenuHomeComponent,
     HeadTeacherWelcomeComponent,
+    SafeguardingComponent,
  
   ],
   imports: [BrowserModule, AppRoutingModule,HttpClientModule],

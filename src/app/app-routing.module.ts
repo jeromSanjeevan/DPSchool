@@ -4,12 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { OurCurriculumsComponent } from './main-pages/our-curriculums/our-curriculums.component';
 import { HeadTeacherWelcomeComponent } from './sub-pages/head-teacher-welcome/head-teacher-welcome.component';
+import { SafeguardingComponent } from './main-pages/safeguarding/safeguarding.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
   {path:'home', component: HomeComponent},
   {path:'home/our-school', component: OurSchoolComponent},
   {path:'home/our-Curriculum', component: OurCurriculumsComponent},
+  {path:'home/safeguarding', component: SafeguardingComponent},
+
 
 
   {path:'headTeacherWelcome', component: HeadTeacherWelcomeComponent},

@@ -4,3 +4,5 @@ Install Bootstrapp:
 
 
  "outputPath": "dist/denibigh-primary-school",
+
+ng build --output-path docs --base-href /DenibighPrimarySchoolLuton/

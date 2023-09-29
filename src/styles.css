@@ -3,7 +3,7 @@
 
 
 body {
-  padding-top:89px; /* Adjust this value to match your navbar's height */
+  padding-top:68px; /* Adjust this value to match your navbar's height */
 }
 
 /* .horizontal-line {
@@ -50,8 +50,4 @@ p {
   background-color: rgba(161, 235, 167, 0.678);
 }
 
-@media (max-width: 600px) {
-  .quick-links {
-    display: none; /* Hide the component on mobile screens */
-  }
-}
+
