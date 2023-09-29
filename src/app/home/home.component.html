@@ -10,21 +10,35 @@
     <div class="carousel-inner">
       <div class="carousel-item active c-item">
         <img [src]="slideImage_1" class="d-block w-100 c-image" alt="...">
-        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-          <!-- <p class="mt-20 fs-3 text-uppercase">Denbigh Primary School</p> -->
 
-          <img [src]="slide_1_Logo" alt="">
+        <div class="carousel-caption top-0 mt-4  d-md-block">
+          <img class="caption_logo" [src]="slide_1_Logo" alt="">
+          <h3 class="display-1 fw-bolder text-capitalize">Dedicated to excellence.</h3>
+          <button class="btn btn-primary">Watch Tour</button>
+        </div>
+
+      </div>
+
+
+      <div class="carousel-item c-item">
+        <img [src]="slideImage_2" class="d-block w-100  c-image" alt="...">
+        <div class="carousel-caption top-0 mt-4  d-md-block">
+          <img class="caption_logo" [src]="slide_1_Logo" alt="">
           <h3 class="display-1 fw-bolder text-capitalize">Dedicated to excellence.</h3>
           <button class="btn btn-primary">Watch Tour</button>
         </div>
       </div>
       <div class="carousel-item c-item">
-        <img [src]="slideImage_2" class="d-block w-100  c-image" alt="...">
-      </div>
-      <div class="carousel-item c-item">
         <img [src]="slideImage_3" class="d-block w-100 c-image" alt="...">
+        <div class="carousel-caption top-0 mt-4  d-md-block">
+          <img class="caption_logo" [src]="slide_1_Logo" alt="">
+          <h3 class="display-1 fw-bolder text-capitalize">Dedicated to excellence.</h3>
+          <button class="btn btn-primary">Watch Tour</button>
+        </div>
       </div>
     </div>
+
+
     <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
@@ -34,8 +48,8 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div class="quick-links " >
-    <app-quick-links ></app-quick-links>
+  <div class="quick-links ">
+    <app-quick-links></app-quick-links>
   </div>
 
 

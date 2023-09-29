@@ -8,8 +8,10 @@
   /* filter: brightness(0.6); */
 }
 
+
 h3 {
   text-align: center;
+  margin-top: 100px;
 }
 
 p {
@@ -34,6 +36,11 @@ p {
   background-color: rgba(161, 235, 167, 0.678);
 }
 
+.caption_logo{
+  height: 40%;
+
+}
+
 @media (max-width: 600px) {
   .quick-links {
     /* display: none; */
@@ -50,4 +57,17 @@ p {
     object-fit: cover;
     /* filter: brightness(0.6); */
   }
+
+  .caption_logo{
+    margin-top: 20px;
+    height: 40%;
+
+  }
+
+  h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3rem;
+  }
+
 }
