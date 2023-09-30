@@ -19,6 +19,7 @@ import { HeadTeacherWelcomeComponent } from './sub-pages/head-teacher-welcome/he
 
 import { HttpClientModule } from '@angular/common/http';
 import { SafeguardingComponent } from './main-pages/safeguarding/safeguarding.component'; // Import HttpClientModule
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -36,10 +37,10 @@ import { SafeguardingComponent } from './main-pages/safeguarding/safeguarding.co
     SubMenuHomeComponent,
     HeadTeacherWelcomeComponent,
     SafeguardingComponent,
- 
+
   ],
   imports: [BrowserModule, AppRoutingModule,HttpClientModule],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass:HashLocationStrategy}],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
